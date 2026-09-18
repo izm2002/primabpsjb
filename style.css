@@ -2140,22 +2140,22 @@ footer p:last-child {
 
 .planning-grid{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-    gap:8px;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:20px;
 }
 
 .planning-card{
     background:#fff;
     border-radius:16px;
-    padding:14px;
+    padding:24px;
     box-shadow:0 5px 18px rgba(25,55,85,.08);
     border-top:5px solid var(--biru);
 }
 
 .planning-card h3{
     color:var(--biru-tua);
-    margin-bottom:15px;
-    font-size:18px;
+    margin-bottom:18px;
+    font-size:20px;
 }
 
 .planning-card a{
@@ -2163,7 +2163,7 @@ footer p:last-child {
     text-decoration:none;
     background:var(--biru-tua);
     color:#fff;
-    padding:8px 12px;
+    padding:10px 14px;
     border-radius:8px;
     margin-bottom:10px;
     text-align:center;
@@ -2173,6 +2173,7 @@ footer p:last-child {
 .planning-card a:hover{
     background:var(--biru);
 }
+
 /* =====================================
    MENU EVALUASI
 ===================================== */

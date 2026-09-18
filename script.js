@@ -2415,262 +2415,65 @@ mulaiCountdown();
 ambilData();
 
 /* =====================================
-   MENU PERENCANAAN, MONITORING & EVALUASI
+   MENU UTAMA
 ===================================== */
 
 const menuButtons =
     document.querySelectorAll(".menu-btn");
 
-const monitoringSection =
-    document.getElementById(
-        "monitoringSection"
-    );
+const menuContents =
+    document.querySelectorAll(".menu-content");
 
-const perencanaanSection =
-    document.getElementById(
-        "perencanaanSection"
-    );
 
-const evaluasiSection =
-    document.getElementById(
-        "evaluasiSection"
-    );
+menuButtons.forEach(function(button) {
 
+    button.addEventListener("click", function() {
 
-/* =====================================
-   MENU UTAMA
-===================================== */
+        /* Hapus active dari semua tombol */
 
-menuButtons.forEach(
-    function(button) {
+        menuButtons.forEach(function(btn) {
 
-        button.addEventListener(
-            "click",
-            function() {
+            btn.classList.remove("active");
 
-                /*
-                   Hapus status active
-                   dari semua menu.
-                */
+        });
 
-                menuButtons.forEach(
-                    function(btn) {
 
-                        btn.classList.remove(
-                            "active"
-                        );
+        /* Hapus active dari semua section */
 
-                    }
-                );
+        menuContents.forEach(function(content) {
 
+            content.classList.remove("active");
 
-                /*
-                   Jadikan menu yang diklik
-                   sebagai menu aktif.
-                */
+        });
 
-                button.classList.add(
-                    "active"
-                );
 
+        /* Aktifkan tombol yang diklik */
 
-                /*
-                   Sembunyikan semua halaman.
-                */
+        button.classList.add("active");
 
-                monitoringSection.classList.remove(
-                    "active"
-                );
 
-                perencanaanSection.classList.remove(
-                    "active"
-                );
+        /* Ambil nama menu */
 
-                evaluasiSection.classList.remove(
-                    "active"
-                );
+        const menu =
+            button.dataset.menu;
 
 
-                /*
-                   Tampilkan halaman
-                   sesuai menu yang dipilih.
-                */
+        /* Cari section yang sesuai */
 
-                if (
-                    button.dataset.menu ===
-                    "monitoring"
-                ) {
+        const section =
+            document.getElementById(
+                menu + "Section"
+            );
 
-                    monitoringSection.classList.add(
-                        "active"
-                    );
 
-                }
+        /* Tampilkan section */
 
+        if (section) {
 
-                else if (
-                    button.dataset.menu ===
-                    "perencanaan"
-                ) {
+            section.classList.add("active");
 
-                    perencanaanSection.classList.add(
-                        "active"
-                    );
+        }
 
-                }
+    });
 
-
-                else if (
-                    button.dataset.menu ===
-                    "evaluasi"
-                ) {
-
-                    evaluasiSection.classList.add(
-                        "active"
-                    );
-
-                }
-
-            }
-        );
-
-    }
-);
-
-
-/* =====================================
-   MENU SUB EVALUASI
-===================================== */
-
-const evaluasiSubmenuButtons =
-    document.querySelectorAll(
-        ".evaluasi-submenu-btn"
-    );
-
-const evaluasiSubmenuContents =
-    document.querySelectorAll(
-        ".evaluasi-submenu-content"
-    );
-
-
-evaluasiSubmenuButtons.forEach(
-    function(button) {
-
-        button.addEventListener(
-            "click",
-            function() {
-
-                /*
-                   Hapus active dari
-                   semua submenu.
-                */
-
-                evaluasiSubmenuButtons.forEach(
-                    function(item) {
-
-                        item.classList.remove(
-                            "active"
-                        );
-
-                    }
-                );
-
-
-                evaluasiSubmenuContents.forEach(
-                    function(content) {
-
-                        content.classList.remove(
-                            "active"
-                        );
-
-                    }
-                );
-
-
-                /*
-                   Aktifkan submenu
-                   yang dipilih.
-                */
-
-                button.classList.add(
-                    "active"
-                );
-
-
-                if (
-                    button.dataset.evaluasi ===
-                    "tindak-lanjut"
-                ) {
-
-                    document
-                        .getElementById(
-                            "tindakLanjutSection"
-                        )
-                        .classList.add(
-                            "active"
-                        );
-
-                }
-
-
-                else if (
-                    button.dataset.evaluasi ===
-                    "tahun-berjalan"
-                ) {
-
-                    document
-                        .getElementById(
-                            "tahunBerjalanSection"
-                        )
-                        .classList.add(
-                            "active"
-                        );
-
-                }
-
-            }
-        );
-
-    }
-);
-
-
-/* =====================================
-   CHECKBOX EVALUASI
-===================================== */
-
-const evaluasiCheckboxes =
-    document.querySelectorAll(
-        ".evaluasi-check"
-    );
-
-
-evaluasiCheckboxes.forEach(
-    function(checkbox) {
-
-        const key =
-            "prima_evaluasi_" +
-            checkbox.dataset.key;
-
-
-        checkbox.checked =
-            localStorage.getItem(
-                key
-            ) === "true";
-
-
-        checkbox.addEventListener(
-            "change",
-            function() {
-
-                localStorage.setItem(
-                    key,
-                    checkbox.checked
-                );
-
-            }
-        );
-
-    }
-);
-);
+});

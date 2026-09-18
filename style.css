@@ -2277,7 +2277,13 @@ footer p:last-child {
     font-weight: bold;
 }
 
-
+.evaluasi-check {
+    flex-shrink: 0;
+    font-size: 30px;
+    line-height: 1;
+    margin-left: auto;
+    padding-left: 15px;
+}
 /* =====================================
    DAFTAR EVALUASI
 ===================================== */

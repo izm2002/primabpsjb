@@ -2141,7 +2141,7 @@ footer p:last-child {
 .planning-grid{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
-    gap:10px;
+    gap:8px;
 }
 
 .planning-card{
@@ -2154,8 +2154,8 @@ footer p:last-child {
 
 .planning-card h3{
     color:var(--biru-tua);
-    margin-bottom:18px;
-    font-size:20px;
+    margin-bottom:15px;
+    font-size:18px;
 }
 
 .planning-card a{

@@ -2415,41 +2415,321 @@ mulaiCountdown();
 ambilData();
 
 /* =====================================
-   MENU PERENCANAAN & MONITORING
+   MENU PERENCANAAN, MONITORING & EVALUASI
 ===================================== */
 
-const menuButtons = document.querySelectorAll(".menu-btn");
+const menuButtons =
+    document.querySelectorAll(".menu-btn");
+
 
 const monitoringSection =
-document.getElementById("monitoringSection");
+    document.getElementById(
+        "monitoringSection"
+    );
+
 
 const perencanaanSection =
-document.getElementById("perencanaanSection");
+    document.getElementById(
+        "perencanaanSection"
+    );
 
-menuButtons.forEach(function(button){
 
-    button.addEventListener("click",function(){
+const evaluasiSection =
+    document.getElementById(
+        "evaluasiSection"
+    );
 
-        menuButtons.forEach(function(btn){
-            btn.classList.remove("active");
-        });
 
-        button.classList.add("active");
+menuButtons.forEach(
+    function(button) {
 
-        if(button.dataset.menu==="monitoring"){
+        button.addEventListener(
+            "click",
+            function() {
 
-            monitoringSection.classList.add("active");
+                menuButtons.forEach(
+                    function(btn) {
 
-            perencanaanSection.classList.remove("active");
+                        btn.classList.remove(
+                            "active"
+                        );
 
-        }else{
+                    }
+                );
 
-            perencanaanSection.classList.add("active");
 
-            monitoringSection.classList.remove("active");
+                button.classList.add(
+                    "active"
+                );
 
-        }
 
-    });
+                /*
+                   Semua halaman disembunyikan
+                   terlebih dahulu.
+                */
 
-});
+                monitoringSection.classList.remove(
+                    "active"
+                );
+
+
+                perencanaanSection.classList.remove(
+                    "active"
+                );
+
+
+                evaluasiSection.classList.remove(
+                    "active"
+                );
+
+
+                /*
+                   Tampilkan halaman sesuai
+                   tombol yang dipilih.
+                */
+
+                if (
+                    button.dataset.menu ===
+                    "monitoring"
+                ) {
+
+                    monitoringSection.classList.add(
+                        "active"
+                    );
+
+                }
+
+
+                else if (
+                    button.dataset.menu ===
+                    "perencanaan"
+                ) {
+
+                    perencanaanSection.classList.add(
+                        "active"
+                    );
+
+                }
+
+
+                else if (
+                    button.dataset.menu ===
+                    "evaluasi"
+                ) {
+
+                    evaluasiSection.classList.add(
+                        "active"
+                    );
+
+                }
+
+            }
+        );
+
+    }
+);
+
+/* =====================================
+   MENU EVALUASI
+===================================== */
+
+const evaluasiSection =
+    document.getElementById("evaluasiSection");
+
+
+const evaluasiSubmenuButtons =
+    document.querySelectorAll(
+        ".evaluasi-submenu-btn"
+    );
+
+
+const evaluasiSubmenuContents =
+    document.querySelectorAll(
+        ".evaluasi-submenu-content"
+    );
+
+
+/*
+   Membuka submenu Evaluasi
+*/
+
+evaluasiSubmenuButtons.forEach(
+    function(button) {
+
+        button.addEventListener(
+            "click",
+            function() {
+
+                evaluasiSubmenuButtons.forEach(
+                    function(item) {
+
+                        item.classList.remove(
+                            "active"
+                        );
+
+                    }
+                );
+
+
+                evaluasiSubmenuContents.forEach(
+                    function(content) {
+
+                        content.classList.remove(
+                            "active"
+                        );
+
+                    }
+                );
+
+
+                button.classList.add(
+                    "active"
+                );
+
+
+                if (
+                    button.dataset.evaluasi ===
+                    "tindak-lanjut"
+                ) {
+
+                    document
+                        .getElementById(
+                            "tindakLanjutSection"
+                        )
+                        .classList.add(
+                            "active"
+                        );
+
+                }
+
+
+                if (
+                    button.dataset.evaluasi ===
+                    "tahun-berjalan"
+                ) {
+
+                    document
+                        .getElementById(
+                            "tahunBerjalanSection"
+                        )
+                        .classList.add(
+                            "active"
+                        );
+
+                }
+
+            }
+        );
+
+    }
+);
+
+
+/* =====================================
+   CHECKBOX EVALUASI
+===================================== */
+
+const evaluasiCheckboxes =
+    document.querySelectorAll(
+        ".evaluasi-check"
+    );
+
+
+evaluasiCheckboxes.forEach(
+    function(checkbox) {
+
+        const key =
+            "prima_evaluasi_" +
+            checkbox.dataset.key;
+
+
+        /*
+           Mengambil status sebelumnya.
+        */
+
+        checkbox.checked =
+            localStorage.getItem(
+                key
+            ) === "true";
+
+
+        checkbox.addEventListener(
+            "change",
+            function() {
+
+                localStorage.setItem(
+                    key,
+                    checkbox.checked
+                );
+
+            }
+        );
+
+    }
+);
+
+
+/* =====================================
+   UPDATE MENU UTAMA
+===================================== */
+
+/*
+   Bagian ini menggantikan perilaku if/else
+   menu lama dengan tambahan Evaluasi.
+
+   Fungsi Monitoring dan Perencanaan tetap
+   berjalan seperti sebelumnya.
+*/
+
+menuButtons.forEach(
+    function(button) {
+
+        button.addEventListener(
+            "click",
+            function() {
+
+                if (
+                    button.dataset.menu !==
+                    "evaluasi"
+                ) {
+
+                    return;
+
+                }
+
+
+                menuButtons.forEach(
+                    function(btn) {
+
+                        btn.classList.remove(
+                            "active"
+                        );
+
+                    }
+                );
+
+
+                button.classList.add(
+                    "active"
+                );
+
+
+                monitoringSection.classList.remove(
+                    "active"
+                );
+
+
+                perencanaanSection.classList.remove(
+                    "active"
+                );
+
+
+                evaluasiSection.classList.add(
+                    "active"
+                );
+
+            }
+        );
+
+    }
+);

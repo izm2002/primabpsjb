@@ -173,7 +173,7 @@ body {
 }
 
 .menu-nav {
-    width: 175px;
+    width: 100px;
     margin: 0;
     padding: 0;
 }
@@ -194,8 +194,8 @@ body {
     max-width: 1250px;
 
     margin:
-        35px auto
-        70px;
+        20px auto
+        50px;
 
 }
 

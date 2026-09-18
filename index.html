@@ -49,13 +49,17 @@
 ===================================== -->
 <div class="main-layout">
     <nav class="menu-nav">
-
+        <button class="menu-btn active"
+                data-menu="beranda">
+            🏠 Beranda
+        </button>
+        
         <button class="menu-btn "
-                data-menu="perencanaan">
-                📁 Perencanaan
+            data-menu="perencanaan">
+            📁 Perencanaan
         </button>
 
-        <button class="menu-btn active"
+        <button class="menu-btn"
             data-menu="monitoring">
         📊 Monitoring
         </button>
@@ -66,7 +70,455 @@
         </button>
     </nav>
 
+<!-- ==================================================
+     MENU BERANDA
+================================================== -->
 
+<section id="berandaSection"
+         class="menu-content active">
+
+
+    <div class="section-title">
+
+        <h2>
+            Beranda
+        </h2>
+
+        <p>
+            Ringkasan perencanaan, pelaksanaan, dan evaluasi
+            akuntabilitas kinerja.
+        </p>
+
+    </div>
+
+
+
+    <!-- =============================================
+         1. PERENCANAAN
+    ============================================== -->
+
+    <section class="beranda-section">
+
+        <div class="beranda-section-heading">
+
+            <div>
+
+                <h2>
+                    PERENCANAAN
+                </h2>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="beranda-planning-grid">
+
+
+            <!-- CAPAIAN RENSTRA -->
+
+            <div class="beranda-card">
+
+                <div class="beranda-card-heading">
+
+                    <div>
+
+                        <span class="beranda-card-icon">
+                            📈
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Capaian Renstra 
+                            </h3>
+
+                            <p>
+                                Capaian IKU terhadap target Renstra
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="iku-capaian-list"
+                     id="capaianRenstraList">
+
+                    <!-- Diisi oleh JavaScript -->
+
+                </div>
+
+            </div>
+
+
+
+            <!-- PERJANJIAN KINERJA -->
+
+            <div class="beranda-card">
+
+                <div class="beranda-card-heading">
+
+                    <div>
+
+                        <span class="beranda-card-icon">
+                            📝
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Perjanjian Kinerja
+                            </h3>
+
+                            <p>
+                                Capaian IKU terhadap target Perjanjian Kinerja
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="iku-capaian-list"
+                     id="perjanjianKinerjaList">
+
+                    <!-- Diisi oleh JavaScript -->
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =============================================
+         2. CAPAIAN KINERJA
+    ============================================== -->
+
+    <section class="beranda-section">
+
+        <div class="beranda-section-heading">
+
+            <div>
+
+
+                <h2>
+                    PELAKSANAAN
+                </h2>
+
+
+            </div>
+
+        </div>
+
+
+
+        <div class="capaian-kinerja-grid">
+
+
+            <!-- TRIWULAN I -->
+
+            <div class="capaian-card">
+
+
+                <h3>
+                    Capaian Kinerja Triwulan I
+                </h3>
+
+                <div class="capaian-metric">
+
+                    <span>
+                        Terhadap Target Triwulanan
+                    </span>
+
+                    <strong id="tw1Triwulanan">
+                        110
+                    </strong>
+
+                </div>
+
+                <div class="capaian-metric">
+
+                    <span>
+                        Terhadap Target Setahun
+                    </span>
+
+                    <strong id="tw1Tahunan">
+                        5.25
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- TRIWULAN II -->
+
+            <div class="capaian-card">
+
+
+                <h3>
+                    Capaian Kinerja Triwulan II
+                </h3>
+
+                <div class="capaian-metric">
+
+                    <span>
+                        Terhadap Target Triwulanan
+                    </span>
+
+                    <strong id="tw2Triwulanan">
+                        109.59
+                    </strong>
+
+                </div>
+
+                <div class="capaian-metric">
+
+                    <span>
+                        Terhadap Target Setahun
+                    </span>
+
+                    <strong id="tw2Tahunan">
+                        10.03
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- TRIWULAN III -->
+
+            <div class="capaian-card">
+
+
+                <h3>
+                    Capaian Kinerja Triwulan III
+                </h3>
+
+                <div class="capaian-metric">
+
+                    <span>
+                        Terhadap Target Triwulanan
+                    </span>
+
+                    <strong id="tw3Triwulanan">
+                        -
+                    </strong>
+
+                </div>
+
+                <div class="capaian-metric">
+
+                    <span>
+                        Terhadap Target Setahun
+                    </span>
+
+                    <strong id="tw3Tahunan">
+                        -
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- TRIWULAN IV -->
+
+            <div class="capaian-card">
+
+                <div class="capaian-card-icon">
+                    IV
+                </div>
+
+                <h3>
+                    Capaian Kinerja Triwulan IV
+                </h3>
+
+                <div class="capaian-metric">
+
+                    <span>
+                        Terhadap Target Triwulanan
+                    </span>
+
+                    <strong id="tw4Triwulanan">
+                        -
+                    </strong>
+
+                </div>
+
+                <div class="capaian-metric">
+
+                    <span>
+                        Terhadap Target Setahun
+                    </span>
+
+                    <strong id="tw4Tahunan">
+                        -
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =============================================
+         3. EVALUASI
+    ============================================== -->
+
+    <section class="beranda-section">
+
+        <div class="beranda-section-heading">
+
+            <div>
+
+
+                <h2>
+                    EVALUASI
+                </h2>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="evaluasi-ringkasan-grid">
+
+
+            <!-- PERMINDOK TAHUN SEKARANG -->
+
+            <div class="evaluasi-summary-card">
+
+                <div class="evaluasi-summary-heading">
+
+                    <div>
+
+                        <span class="evaluasi-summary-icon">
+                            📄
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Permindok Tahun Sekarang
+                            </h3>
+
+                            <p>
+                                -
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="evaluasi-pie-wrapper">
+
+                    <div class="evaluasi-pie"
+                         id="pieTahunSekarang">
+
+                        <div class="evaluasi-pie-center">
+
+                            <strong>
+                                100%
+                            </strong>
+
+                            <span>
+                                Lengkap
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- PERMINDOK TAHUN BERJALAN -->
+
+            <div class="evaluasi-summary-card">
+
+                <div class="evaluasi-summary-heading">
+
+                    <div>
+
+                        <span class="evaluasi-summary-icon">
+                            📋
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Permindok Tahun Berjalan
+                            </h3>
+
+                            <p>
+                                -
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="evaluasi-pie-wrapper">
+
+                    <div class="evaluasi-pie"
+                         id="pieTahunBerjalan">
+
+                        <div class="evaluasi-pie-center">
+
+                            <strong>
+                                100%
+                            </strong>
+
+                            <span>
+                                Lengkap
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+</section>
 
 <!-- =====================================
      MENU PERENCANAAN

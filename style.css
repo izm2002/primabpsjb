@@ -2065,33 +2065,36 @@ footer p:last-child {
    MENU PERENCANAAN & MONITORING
 ===================================== */
 
-.menu-nav{
-    display:flex;
-    gap:12px;
-    margin-bottom:25px;
+.menu-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 190px;
+    flex-shrink: 0;
+}
+.menu-btn {
+    width: 100%;
+    background: #ffffff;
+    color: var(--biru-tua);
+    border: 2px solid var(--border);
+    border-radius: 10px;
+    padding: 12px 16px;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.2s;
 }
 
-.menu-btn{
-    background:#ffffff;
-    color:var(--biru-tua);
-    border:2px solid var(--border);
-    border-radius:10px;
-    padding:12px 22px;
-    font-size:15px;
-    font-weight:bold;
-    cursor:pointer;
-    transition:.2s;
+.menu-btn:hover {
+    border-color: var(--biru);
+    color: var(--biru);
 }
 
-.menu-btn:hover{
-    border-color:var(--biru);
-    color:var(--biru);
-}
-
-.menu-btn.active{
-    background:var(--biru-tua);
-    color:#fff;
-    border-color:var(--biru-tua);
+.menu-btn.active {
+    background: var(--biru-tua);
+    color: #ffffff;
+    border-color: var(--biru-tua);
 }
 
 /* Menampilkan section sesuai menu */

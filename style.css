@@ -179,7 +179,12 @@ body {
 .menu-nav {
     width: 175px !important;
     margin: 0 !important;
-    padding: 0 !important;
+    position: sticky;
+    top: 245px;
+    z-index: 999;
+    background: var(--latar);
+    padding-top: 5px;
+    padding-bottom: 15px;
 }
 
 .main-content {
@@ -188,6 +193,7 @@ body {
     margin: 0 !important;
     padding: 0 !important;
 }
+
 /* =====================================
    CONTAINER
 ===================================== */

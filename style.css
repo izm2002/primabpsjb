@@ -193,15 +193,10 @@ body {
 ===================================== */
 
 .container {
-
-    width: 90%;
-
-    max-width: 1250px;
-
-    margin:
-        20px auto
-        50px;
-
+    width: 100%;
+    max-width: none;
+    margin: 20px 0 50px;
+    padding: 0;
 }
 
 .planning-container {

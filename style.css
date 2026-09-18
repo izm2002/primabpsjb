@@ -2138,17 +2138,9 @@ footer p:last-child {
    HALAMAN PERENCANAAN
 ===================================== */
 
-/* =====================================
-   HALAMAN PERENCANAAN
-===================================== */
-
-/* =====================================
-   HALAMAN PERENCANAAN
-===================================== */
-
 .planning-grid{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
     gap:10px;
 }
 
@@ -2171,7 +2163,7 @@ footer p:last-child {
     text-decoration:none;
     background:var(--biru-tua);
     color:#fff;
-    padding:10px 14px;
+    padding:8px 12px;
     border-radius:8px;
     margin-bottom:10px;
     text-align:center;
@@ -2587,7 +2579,7 @@ footer {
     background: var(--putih);
     border: 1px solid var(--border);
     border-radius: 12px;
-    padding: 16px;
+    padding: 20px;
     box-shadow: 0 4px 14px rgba(25, 55, 85, 0.06);
 }
 

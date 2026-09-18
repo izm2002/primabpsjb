@@ -2577,7 +2577,8 @@ footer {
 }
 
 #berandaSection .perjanjian-kinerja-card .iku-capaian-item {
-    display: block;
+    display: flex;
+    flex-direction: column;
     padding: 8px 10px;
     min-height: 65px;
 
@@ -2611,6 +2612,7 @@ footer {
     display: flex;
     align-items: center;
     gap: 6px;
+    margin-top: auto;
 }
 
 #berandaSection .perjanjian-kinerja-card .iku-icon {
@@ -2622,27 +2624,6 @@ footer {
     font-size: 17px;
     font-weight: bold;
 }
-
-/* RESPONSIVE */
-
-@media (max-width: 1000px) {
-    #berandaSection .perjanjian-kinerja-card .iku-capaian-list {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
-}
-
-@media (max-width: 750px) {
-    #berandaSection .perjanjian-kinerja-card .iku-capaian-list {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-}
-
-@media (max-width: 500px) {
-    #berandaSection .perjanjian-kinerja-card .iku-capaian-list {
-        grid-template-columns: 1fr;
-    }
-}
-
 /* =====================================
    PELAKSANAAN - 4 CARD
 ===================================== */

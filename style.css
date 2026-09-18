@@ -2546,3 +2546,198 @@ footer {
     margin-top: auto;
 }
 
+/* =====================================
+   BERANDA
+===================================== */
+
+.beranda-section {
+    margin-bottom: 35px;
+}
+
+.beranda-section-heading {
+    margin-bottom: 18px;
+}
+
+.beranda-section-heading h2 {
+    color: var(--biru-tua);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+/* =====================================
+   PERENCANAAN - 2 CARD
+===================================== */
+
+.beranda-planning-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.beranda-card {
+    background: var(--putih);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 22px;
+    box-shadow: 0 4px 14px rgba(25, 55, 85, 0.06);
+}
+
+.beranda-card-heading {
+    margin-bottom: 18px;
+}
+
+.beranda-card-heading > div {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.beranda-card-icon {
+    font-size: 30px;
+    line-height: 1;
+}
+
+.beranda-card-heading h3 {
+    color: var(--biru-tua);
+    font-size: 18px;
+    margin-bottom: 4px;
+}
+
+.beranda-card-heading p {
+    color: var(--teks-sekunder);
+    font-size: 14px;
+}
+
+
+/* =====================================
+   PELAKSANAAN - 4 CARD
+===================================== */
+
+.capaian-kinerja-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.capaian-card {
+    background: var(--putih);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 14px rgba(25, 55, 85, 0.06);
+}
+
+.capaian-card h3 {
+    color: var(--biru-tua);
+    font-size: 17px;
+    margin-bottom: 18px;
+    line-height: 1.4;
+}
+
+.capaian-metric {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 10px 0;
+    border-top: 1px solid var(--border);
+}
+
+.capaian-metric span {
+    color: var(--teks-sekunder);
+    font-size: 13px;
+}
+
+.capaian-metric strong {
+    color: var(--biru);
+    font-size: 22px;
+}
+
+
+/* =====================================
+   EVALUASI - 2 CARD
+===================================== */
+
+.evaluasi-ringkasan-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.evaluasi-summary-card {
+    background: var(--putih);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 22px;
+    box-shadow: 0 4px 14px rgba(25, 55, 85, 0.06);
+}
+
+.evaluasi-summary-heading {
+    margin-bottom: 20px;
+}
+
+.evaluasi-summary-heading > div {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.evaluasi-summary-icon {
+    font-size: 30px;
+    line-height: 1;
+}
+
+.evaluasi-summary-heading h3 {
+    color: var(--biru-tua);
+    font-size: 18px;
+    margin-bottom: 4px;
+}
+
+.evaluasi-summary-heading p {
+    color: var(--teks-sekunder);
+    font-size: 14px;
+}
+
+
+/* =====================================
+   GRAFIK PERMINDOK
+===================================== */
+
+.evaluasi-grafik-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.evaluasi-grafik {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    margin: 0 auto;
+}
+
+
+/* =====================================
+   RESPONSIVE
+===================================== */
+
+@media (max-width: 900px) {
+
+    .capaian-kinerja-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+@media (max-width: 650px) {
+
+    .beranda-planning-grid,
+    .capaian-kinerja-grid,
+    .evaluasi-ringkasan-grid {
+        grid-template-columns: 1fr;
+    }
+
+}

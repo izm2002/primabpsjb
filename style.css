@@ -163,7 +163,16 @@ body {
 
 }
 
+.main-layout {
+    display: grid;
+    grid-template-columns: 190px minmax(0, 1fr);
+    gap: 25px;
+    align-items: start;
+}
 
+.main-content {
+    min-width: 0;
+}
 /* =====================================
    CONTAINER
 ===================================== */
@@ -2064,16 +2073,18 @@ footer p:last-child {
 /* =====================================
    MENU PERENCANAAN & MONITORING
 ===================================== */
-
 .menu-nav {
     display: flex;
     flex-direction: column;
     gap: 10px;
     width: 190px;
-    flex-shrink: 0;
+    margin: 0;
+    padding: 0;
 }
+
 .menu-btn {
     width: 100%;
+    box-sizing: border-box;
     background: #ffffff;
     color: var(--biru-tua);
     border: 2px solid var(--border);

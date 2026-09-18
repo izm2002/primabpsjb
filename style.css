@@ -163,28 +163,30 @@ body {
 
 }
 
+/* =====================================
+   RAPATKAN SIDEBAR MENU KE KIRI
+===================================== */
+
 .main-layout {
-    display: grid;
-    grid-template-columns: 175px minmax(0, 1fr);
-    gap: 0;
-    width: 100%;
-    margin: 0;
-    padding: 0;
+    display: grid !important;
+    grid-template-columns: 175px minmax(0, 1fr) !important;
+    gap: 0 !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
 }
-.main-layout {
-    margin-left: -20px;
-    margin-right: -20px;
-}
+
 .menu-nav {
-    width: 175px;
-    margin: 0;
-    padding: 0;
+    width: 175px !important;
+    margin: 0 !important;
+    padding: 0 !important;
 }
 
 .main-content {
-    min-width: 0;
-    margin: 0;
-    padding: 0;
+    min-width: 0 !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
 }
 /* =====================================
    CONTAINER

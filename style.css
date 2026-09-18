@@ -2149,13 +2149,13 @@ footer p:last-child {
 .planning-grid{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-    gap:20px;
+    gap:10px;
 }
 
 .planning-card{
     background:#fff;
     border-radius:16px;
-    padding:24px;
+    padding:14px;
     box-shadow:0 5px 18px rgba(25,55,85,.08);
     border-top:5px solid var(--biru);
 }

@@ -2574,44 +2574,112 @@ footer {
    PERENCANAAN - 2 CARD
 ===================================== */
 
-.beranda-planning-grid {
+/* =====================================
+   PERENCANAAN - 2 CARD
+===================================== */
+
+#berandaSection .iku-capaian-list {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 8px;
 }
 
-.beranda-card {
+#berandaSection .beranda-card {
     background: var(--putih);
     border: 1px solid var(--border);
     border-radius: 12px;
-    padding: 22px;
+    padding: 16px;
     box-shadow: 0 4px 14px rgba(25, 55, 85, 0.06);
 }
 
-.beranda-card-heading {
-    margin-bottom: 18px;
+/* HEADER CARD */
+
+#berandaSection .beranda-card-heading {
+    margin-bottom: 14px;
 }
 
-.beranda-card-heading > div {
+#berandaSection .beranda-card-heading > div {
     display: flex;
-    align-items: flex-start;
-    gap: 12px;
+    align-items: center;
+    gap: 10px;
 }
 
-.beranda-card-icon {
-    font-size: 30px;
-    line-height: 1;
+#berandaSection .beranda-card-icon {
+    font-size: 28px;
 }
 
-.beranda-card-heading h3 {
+#berandaSection .beranda-card-heading h3 {
     color: var(--biru-tua);
-    font-size: 18px;
-    margin-bottom: 4px;
+    font-size: 17px;
+    margin-bottom: 2px;
 }
 
-.beranda-card-heading p {
+#berandaSection .beranda-card-heading p {
     color: var(--teks-sekunder);
-    font-size: 14px;
+    font-size: 11px;
+}
+
+
+/* ITEM IKU */
+
+#berandaSection .iku-capaian-item {
+    min-height: 52px;
+    padding: 7px 5px;
+
+    background: var(--biru-muda);
+    border: 1px solid var(--border);
+    border-radius: 7px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+
+    text-align: center;
+}
+
+#berandaSection .iku-icon {
+    font-size: 16px;
+    flex-shrink: 0;
+}
+
+#berandaSection .iku-name {
+    color: var(--biru-tua);
+    font-size: 10px;
+    font-weight: bold;
+    line-height: 1.3;
+}
+
+#berandaSection .iku-capaian-item strong {
+    color: var(--biru);
+    font-size: 13px;
+    white-space: nowrap;
+}
+
+
+/* =====================================
+   2 CARD SEJAJAR
+===================================== */
+
+#berandaSection .beranda-card-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+    #berandaSection .beranda-card-group {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    #berandaSection .iku-capaian-list {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
 }
 /* =====================================
    PELAKSANAAN - 4 CARD

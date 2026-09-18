@@ -2359,7 +2359,38 @@ footer p:last-child {
     color: #426153;
 }
 
+/* =====================================
+   LIST EVALUASI
+===================================== */
 
+.evaluasi-item {
+    display: grid;
+    grid-template-columns: 35px minmax(0, 1fr) 45px;
+    align-items: start;
+    column-gap: 12px;
+    padding: 14px 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.evaluasi-number {
+    font-weight: bold;
+    color: var(--biru-tua);
+    line-height: 1.6;
+}
+
+.evaluasi-text {
+    min-width: 0;
+    line-height: 1.6;
+}
+
+.evaluasi-check {
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 18px;
+    line-height: 1.6;
+}
 /* =====================================
    FREEZE HEADER + MENU
 ===================================== */

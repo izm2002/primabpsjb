@@ -170,15 +170,15 @@ body {
 .main-layout {
     display: grid !important;
     grid-template-columns: 175px minmax(0, 1fr) !important;
-    gap: 20px !important;
+    gap: 30px !important;
     width: 100% !important;
-    margin: 0 !important;
+    margin: 20px !important;
     padding: 0 !important;
 }
 
 .menu-nav {
     width: 175px !important;
-    margin: 0 !important;
+    margin: 20px !important;
     position: sticky;
     top: 245px;
     z-index: 999;
@@ -189,7 +189,7 @@ body {
 
 .main-content {
     min-width: 0 !important;
-    width: 100% !important;
+    width: 95% !important;
     margin: 0 !important;
     padding: 0 !important;
 }

@@ -1830,24 +1830,6 @@ footer p:last-child {
     opacity: 0.72;
 
 }
-html,
-body {
-    min-height: 100%;
-}
-
-body {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
-
-.main-layout {
-    flex: 1;
-}
-
-footer {
-    margin-top: auto;
-}
 
 
 /* =====================================

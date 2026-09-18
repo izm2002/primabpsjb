@@ -2421,18 +2421,15 @@ ambilData();
 const menuButtons =
     document.querySelectorAll(".menu-btn");
 
-
 const monitoringSection =
     document.getElementById(
         "monitoringSection"
     );
 
-
 const perencanaanSection =
     document.getElementById(
         "perencanaanSection"
     );
-
 
 const evaluasiSection =
     document.getElementById(
@@ -2440,12 +2437,21 @@ const evaluasiSection =
     );
 
 
+/* =====================================
+   MENU UTAMA
+===================================== */
+
 menuButtons.forEach(
     function(button) {
 
         button.addEventListener(
             "click",
             function() {
+
+                /*
+                   Hapus status active
+                   dari semua menu.
+                */
 
                 menuButtons.forEach(
                     function(btn) {
@@ -2458,25 +2464,27 @@ menuButtons.forEach(
                 );
 
 
+                /*
+                   Jadikan menu yang diklik
+                   sebagai menu aktif.
+                */
+
                 button.classList.add(
                     "active"
                 );
 
 
                 /*
-                   Semua halaman disembunyikan
-                   terlebih dahulu.
+                   Sembunyikan semua halaman.
                 */
 
                 monitoringSection.classList.remove(
                     "active"
                 );
 
-
                 perencanaanSection.classList.remove(
                     "active"
                 );
-
 
                 evaluasiSection.classList.remove(
                     "active"
@@ -2484,8 +2492,8 @@ menuButtons.forEach(
 
 
                 /*
-                   Tampilkan halaman sesuai
-                   tombol yang dipilih.
+                   Tampilkan halaman
+                   sesuai menu yang dipilih.
                 */
 
                 if (
@@ -2529,19 +2537,15 @@ menuButtons.forEach(
     }
 );
 
+
 /* =====================================
-   MENU EVALUASI
+   MENU SUB EVALUASI
 ===================================== */
-
-const evaluasiSection =
-    document.getElementById("evaluasiSection");
-
 
 const evaluasiSubmenuButtons =
     document.querySelectorAll(
         ".evaluasi-submenu-btn"
     );
-
 
 const evaluasiSubmenuContents =
     document.querySelectorAll(
@@ -2549,16 +2553,17 @@ const evaluasiSubmenuContents =
     );
 
 
-/*
-   Membuka submenu Evaluasi
-*/
-
 evaluasiSubmenuButtons.forEach(
     function(button) {
 
         button.addEventListener(
             "click",
             function() {
+
+                /*
+                   Hapus active dari
+                   semua submenu.
+                */
 
                 evaluasiSubmenuButtons.forEach(
                     function(item) {
@@ -2582,6 +2587,11 @@ evaluasiSubmenuButtons.forEach(
                 );
 
 
+                /*
+                   Aktifkan submenu
+                   yang dipilih.
+                */
+
                 button.classList.add(
                     "active"
                 );
@@ -2603,7 +2613,7 @@ evaluasiSubmenuButtons.forEach(
                 }
 
 
-                if (
+                else if (
                     button.dataset.evaluasi ===
                     "tahun-berjalan"
                 ) {
@@ -2643,10 +2653,6 @@ evaluasiCheckboxes.forEach(
             checkbox.dataset.key;
 
 
-        /*
-           Mengambil status sebelumnya.
-        */
-
         checkbox.checked =
             localStorage.getItem(
                 key
@@ -2667,69 +2673,4 @@ evaluasiCheckboxes.forEach(
 
     }
 );
-
-
-/* =====================================
-   UPDATE MENU UTAMA
-===================================== */
-
-/*
-   Bagian ini menggantikan perilaku if/else
-   menu lama dengan tambahan Evaluasi.
-
-   Fungsi Monitoring dan Perencanaan tetap
-   berjalan seperti sebelumnya.
-*/
-
-menuButtons.forEach(
-    function(button) {
-
-        button.addEventListener(
-            "click",
-            function() {
-
-                if (
-                    button.dataset.menu !==
-                    "evaluasi"
-                ) {
-
-                    return;
-
-                }
-
-
-                menuButtons.forEach(
-                    function(btn) {
-
-                        btn.classList.remove(
-                            "active"
-                        );
-
-                    }
-                );
-
-
-                button.classList.add(
-                    "active"
-                );
-
-
-                monitoringSection.classList.remove(
-                    "active"
-                );
-
-
-                perencanaanSection.classList.remove(
-                    "active"
-                );
-
-
-                evaluasiSection.classList.add(
-                    "active"
-                );
-
-            }
-        );
-
-    }
 );

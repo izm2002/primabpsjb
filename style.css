@@ -2545,3 +2545,54 @@ body {
 footer {
     margin-top: auto;
 }
+/* =====================================
+   BERANDA - LAYOUT
+===================================== */
+
+.beranda-planning-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+
+/* =====================================
+   CAPAIAN KINERJA
+===================================== */
+
+.capaian-kinerja-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+
+/* =====================================
+   EVALUASI
+===================================== */
+
+.evaluasi-ringkasan-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+
+/* =====================================
+   GRAFIK EVALUASI
+===================================== */
+
+.evaluasi-grafik-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.evaluasi-grafik {
+    display: block;
+    max-width: 800px;
+    width: 100%;
+    height: auto;
+}

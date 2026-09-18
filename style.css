@@ -2142,24 +2142,28 @@ footer p:last-child {
    HALAMAN PERENCANAAN
 ===================================== */
 
+/* =====================================
+   HALAMAN PERENCANAAN
+===================================== */
+
 .planning-grid{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
-    gap:14px;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
 }
 
 .planning-card{
     background:#fff;
-    border-radius:12px;
-    padding:16px;
-    box-shadow:0 3px 12px rgba(25,55,85,.08);
-    border-top:4px solid var(--biru);
+    border-radius:16px;
+    padding:24px;
+    box-shadow:0 5px 18px rgba(25,55,85,.08);
+    border-top:5px solid var(--biru);
 }
 
 .planning-card h3{
     color:var(--biru-tua);
-    margin-bottom:12px;
-    font-size:17px;
+    margin-bottom:18px;
+    font-size:20px;
 }
 
 .planning-card a{
@@ -2167,12 +2171,11 @@ footer p:last-child {
     text-decoration:none;
     background:var(--biru-tua);
     color:#fff;
-    padding:8px 12px;
-    border-radius:7px;
-    margin-bottom:8px;
+    padding:10px 14px;
+    border-radius:8px;
+    margin-bottom:10px;
     text-align:center;
     transition:.2s;
-    font-size:14px;
 }
 
 .planning-card a:hover{

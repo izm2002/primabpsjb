@@ -2440,7 +2440,16 @@ footer p:last-child {
     position: relative;
     z-index: 1001;
 }
-
+.main-layout {
+    display: grid !important;
+    grid-template-columns: 175px minmax(0, 1fr) !important;
+    gap: 20px !important;
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    align-items: start;
+}
 .menu-nav {
     position: sticky;
     top: 245px;

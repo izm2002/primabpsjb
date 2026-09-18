@@ -2570,116 +2570,40 @@ footer {
    PERENCANAAN - 2 CARD
 ===================================== */
 
-/* =====================================
-   PERENCANAAN - 2 CARD
-===================================== */
-
-/* =====================================
-   PERENCANAAN - 2 CARD
-===================================== */
-
-#berandaSection .iku-capaian-list {
-    display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 8px;
-}
-
-#berandaSection .beranda-card {
-    background: var(--putih);
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    padding: 16px;
-    box-shadow: 0 4px 14px rgba(25, 55, 85, 0.06);
-}
-
-/* HEADER CARD */
-
-#berandaSection .beranda-card-heading {
-    margin-bottom: 14px;
-}
-
-#berandaSection .beranda-card-heading > div {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-#berandaSection .beranda-card-icon {
-    font-size: 28px;
-}
-
-#berandaSection .beranda-card-heading h3 {
-    color: var(--biru-tua);
-    font-size: 17px;
-    margin-bottom: 2px;
-}
-
-#berandaSection .beranda-card-heading p {
-    color: var(--teks-sekunder);
-    font-size: 11px;
-}
-
-
-/* ITEM IKU */
-
-#berandaSection .iku-capaian-item {
-    min-height: 52px;
-    padding: 7px 5px;
-
+#berandaSection .beranda-card:nth-child(2) .iku-capaian-item {
+    padding: 8px 10px;
     background: var(--biru-muda);
     border: 1px solid var(--border);
     border-radius: 7px;
+}
 
+#berandaSection .beranda-card:nth-child(2) .iku-header {
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 3px;
-
-    text-align: center;
-}
-
-#berandaSection .iku-icon {
-    font-size: 16px;
-    flex-shrink: 0;
-}
-
-#berandaSection .iku-name {
+    gap: 12px;
+    margin-bottom: 4px;
     color: var(--biru-tua);
-    font-size: 10px;
+    font-size: 11px;
     font-weight: bold;
-    line-height: 1.3;
 }
 
-#berandaSection .iku-capaian-item strong {
+#berandaSection .beranda-card:nth-child(2) .iku-name {
+    font-size: 11px;
+}
+
+#berandaSection .beranda-card:nth-child(2) .iku-footer {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+#berandaSection .beranda-card:nth-child(2) .iku-icon {
+    font-size: 15px;
+}
+
+#berandaSection .beranda-card:nth-child(2) .iku-footer strong {
     color: var(--biru);
     font-size: 13px;
-    white-space: nowrap;
-}
-
-
-/* =====================================
-   2 CARD SEJAJAR
-===================================== */
-
-#berandaSection .beranda-card-group {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 16px;
-}
-
-
-/* RESPONSIVE */
-
-@media (max-width: 900px) {
-    #berandaSection .beranda-card-group {
-        grid-template-columns: 1fr;
-    }
-}
-
-@media (max-width: 600px) {
-    #berandaSection .iku-capaian-list {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
 }
 /* =====================================
    PELAKSANAAN - 4 CARD
@@ -2833,38 +2757,41 @@ footer {
    CARD PERENCANAAN IKU
 ===================================== */
 
-#berandaSection .iku-card-grid {
-    display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+#berandaSection .beranda-card:nth-child(2) .iku-capaian-item {
+    padding: 8px 10px;
+    background: var(--biru-muda);
+    border: 1px solid var(--border);
+    border-radius: 7px;
+}
+
+#berandaSection .beranda-card:nth-child(2) .iku-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 4px;
+    color: var(--biru-tua);
+    font-size: 11px;
+    font-weight: bold;
+}
+
+#berandaSection .beranda-card:nth-child(2) .iku-name {
+    font-size: 11px;
+}
+
+#berandaSection .beranda-card:nth-child(2) .iku-footer {
+    display: flex;
+    align-items: center;
     gap: 6px;
 }
 
-#berandaSection .iku-card {
-    background: var(--putih);
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    padding: 12px;
-    box-shadow: 0 4px 14px rgba(25, 55, 85, 0.06);
-
-    display: flex;
-    flex-direction: column;
+#berandaSection .beranda-card:nth-child(2) .iku-icon {
+    font-size: 15px;
 }
 
-#berandaSection .iku-card-title {
-    color: var(--biru-tua);
-    font-size: 16px;
-    font-weight: bold;
-    margin-bottom: 7px;
-}
-
-#berandaSection .iku-card-name {
-    color: var(--teks);
+#berandaSection .beranda-card:nth-child(2) .iku-footer strong {
+    color: var(--biru);
     font-size: 13px;
-    line-height: 1.5;
-    flex: 1;
-    margin-bottom: 8px;
 }
-
 /* NILAI RENSTRA & PK */
 
 #berandaSection .iku-card-values {

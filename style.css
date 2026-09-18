@@ -2197,7 +2197,13 @@ footer p:last-child {
     border-color: var(--biru-tua);
 }
 
+.evaluasi-submenu-content {
+    display: none;
+}
 
+.evaluasi-submenu-content.active {
+    display: block;
+}
 /* =====================================
    KONTEN SUBMENU
 ===================================== */

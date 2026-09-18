@@ -1814,7 +1814,7 @@ footer {
 
 footer p:first-child {
 
-    font-size: 30px;
+    font-size: 20px;
 
     font-weight: bold;
 
@@ -1825,7 +1825,7 @@ footer p:first-child {
 
 footer p:last-child {
 
-    font-size: 25px;
+    font-size: 17px;
 
     opacity: 0.72;
 

@@ -2477,3 +2477,71 @@ menuButtons.forEach(function(button) {
     });
 
 });
+/* =====================================
+   SUBMENU EVALUASI
+===================================== */
+
+const evaluasiSubmenuButtons =
+    document.querySelectorAll(
+        ".evaluasi-submenu-btn"
+    );
+
+const evaluasiSubmenuContents =
+    document.querySelectorAll(
+        ".evaluasi-submenu-content"
+    );
+
+
+evaluasiSubmenuButtons.forEach(function(button) {
+
+    button.addEventListener("click", function() {
+
+        /* Hilangkan active dari semua tombol */
+
+        evaluasiSubmenuButtons.forEach(function(btn) {
+
+            btn.classList.remove("active");
+
+        });
+
+
+        /* Sembunyikan semua isi submenu */
+
+        evaluasiSubmenuContents.forEach(function(content) {
+
+            content.classList.remove("active");
+
+        });
+
+
+        /* Aktifkan tombol yang diklik */
+
+        button.classList.add("active");
+
+
+        /* Tampilkan isi submenu yang sesuai */
+
+        const submenu =
+            button.dataset.evaluasi;
+
+
+        if (submenu === "tindak-lanjut") {
+
+            document
+                .getElementById("tindakLanjutSection")
+                .classList.add("active");
+
+        }
+
+
+        else if (submenu === "tahun-berjalan") {
+
+            document
+                .getElementById("tahunBerjalanSection")
+                .classList.add("active");
+
+        }
+
+    });
+
+});

@@ -2587,7 +2587,7 @@ footer {
     background: var(--putih);
     border: 1px solid var(--border);
     border-radius: 12px;
-    padding: 22px;
+    padding: 16px;
     box-shadow: 0 4px 14px rgba(25, 55, 85, 0.06);
 }
 

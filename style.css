@@ -2594,14 +2594,14 @@ footer {
 
 #berandaSection .perjanjian-kinerja-card .iku-header > span:first-child {
     color: var(--biru-tua);
-    font-size: 16px;
+    font-size: 12px;
     font-weight: bold;
     white-space: nowrap;
 }
 
 #berandaSection .perjanjian-kinerja-card .iku-name {
     color: var(--teks);
-    font-size: 16px;
+    font-size: 12px;
     line-height: 1.3;
 }
 
@@ -2614,12 +2614,12 @@ footer {
 }
 
 #berandaSection .perjanjian-kinerja-card .iku-icon {
-    font-size: 17px;
+    font-size: 20px;
 }
 
 #berandaSection .perjanjian-kinerja-card .iku-footer strong {
     color: var(--biru);
-    font-size: 12px;
+    font-size: 17px;
     font-weight: bold;
 }
 

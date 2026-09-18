@@ -2567,15 +2567,12 @@ footer {
 
 
 /* =====================================
-   PERENCANAAN - 2 CARD
-===================================== */
-/* =====================================
    PERJANJIAN KINERJA - GRID 4 KOLOM
 ===================================== */
 
 #berandaSection .perjanjian-kinerja-card .iku-capaian-list {
     display: grid;
-    grid-template-columns: repeat(5, minmax(0, 1fr));
+    grid-template-columns: repeat(6, minmax(0, 1fr));
     gap: 8px;
 }
 
@@ -2586,15 +2583,12 @@ footer {
 
     background: var(--putih);
     border: 1px solid var(--border);
-    border-radius: 16px;
+    border-radius: 18px;
 }
 
 /* BARIS ATAS: IKU + NAMA */
 
 #berandaSection .perjanjian-kinerja-card .iku-header {
-    display: flex;
-    align-items: flex-start;
-    gap: 7px;
     margin-bottom: 3px;
 }
 

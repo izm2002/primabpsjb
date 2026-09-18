@@ -170,7 +170,7 @@ body {
 .main-layout {
     display: grid !important;
     grid-template-columns: 175px minmax(0, 1fr) !important;
-    gap: 20 !important;
+    gap: 20px !important;
     width: 100% !important;
     margin: 0 !important;
     padding: 0 !important;

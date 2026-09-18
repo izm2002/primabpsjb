@@ -2714,7 +2714,7 @@ footer {
 .evaluasi-grafik {
     display: block;
     width: 100%;
-    max-width: 500px;
+    max-width: 200px;
     height: auto;
     margin: 0 auto;
 }

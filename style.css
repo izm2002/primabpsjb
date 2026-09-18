@@ -190,7 +190,7 @@ body {
 .main-content {
     min-width: 0 !important;
     width: 95% !important;
-    margin: 0 !important;
+    margin: 20px !important;
     padding: 0 !important;
 }
 

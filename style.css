@@ -2754,3 +2754,48 @@ footer {
     padding-left: 15px !important;
     padding-right: 25px !important;
 }
+/* =====================================
+   LIST IKU BERANDA
+===================================== */
+
+#berandaSection .iku-capaian-list {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+#berandaSection .iku-capaian-item {
+    display: grid;
+    grid-template-columns: 32px minmax(0, 1fr) 75px;
+    align-items: center;
+    column-gap: 10px;
+
+    background: #f6f9fc;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+
+    padding: 9px 12px;
+    min-height: 40px;
+}
+
+#berandaSection .iku-icon {
+    width: 32px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 1;
+}
+
+#berandaSection .iku-name {
+    color: var(--teks);
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+#berandaSection .iku-capaian-item strong {
+    width: 75px;
+    text-align: right;
+    color: var(--biru);
+    font-size: 14px;
+    font-weight: bold;
+    white-space: nowrap;
+}

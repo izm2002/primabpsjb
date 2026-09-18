@@ -54,7 +54,7 @@ body {
 
     background-repeat: no-repeat;
 
-    min-height: 100px;
+    min-height: 80px;
 
     position: relative;
 
@@ -63,7 +63,7 @@ body {
 
 .header-overlay {
 
-    min-height: 100px;
+    min-height: 80px;
 
     width: 100%;
 

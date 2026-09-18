@@ -2575,7 +2575,7 @@ footer {
 
 #berandaSection .perjanjian-kinerja-card .iku-capaian-list {
     display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-columns: repeat(5, minmax(0, 1fr));
     gap: 8px;
 }
 
@@ -2586,7 +2586,7 @@ footer {
 
     background: var(--putih);
     border: 1px solid var(--border);
-    border-radius: 17px;
+    border-radius: 16px;
 }
 
 /* BARIS ATAS: IKU + NAMA */
@@ -2595,19 +2595,19 @@ footer {
     display: flex;
     align-items: flex-start;
     gap: 7px;
-    margin-bottom: 5px;
+    margin-bottom: 3px;
 }
 
 #berandaSection .perjanjian-kinerja-card .iku-header > span:first-child {
     color: var(--biru-tua);
-    font-size: 12px;
+    font-size: 16px;
     font-weight: bold;
     white-space: nowrap;
 }
 
 #berandaSection .perjanjian-kinerja-card .iku-name {
     color: var(--teks);
-    font-size: 12px;
+    font-size: 16px;
     line-height: 1.3;
 }
 

@@ -2742,13 +2742,15 @@ footer {
 
 }
 /* =====================================
-   JARAK KONTEN BERANDA
+   JARAK SIDEBAR DAN BERANDA
 ===================================== */
 
-#berandaSection {
-    padding: 0 10px 10px 0;
+.main-layout {
+    grid-template-columns: 200px minmax(0, 1fr) !important;
+    gap: 30px !important;
 }
 
-#berandaSection .beranda-section:first-child {
-    margin-top: 10px;
+#berandaSection {
+    padding-left: 15px !important;
+    padding-right: 25px !important;
 }

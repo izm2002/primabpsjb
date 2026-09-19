@@ -2874,3 +2874,51 @@ footer {
     text-align: center;
     align-items: center;
 }
+
+/* =====================================
+   SIDEBAR RESPONSIVE HP
+===================================== */
+
+@media screen and (max-width: 560px) {
+
+    .main-layout {
+        display: block !important;
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .menu-nav {
+        position: sticky;
+        top: 0;
+        z-index: 998;
+
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 8px 12px !important;
+
+        display: flex;
+        flex-direction: row;
+        gap: 8px;
+
+        background: var(--latar);
+
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .menu-btn {
+        width: auto !important;
+        min-width: max-content;
+        padding: 10px 15px;
+        font-size: 13px;
+        white-space: nowrap;
+    }
+
+    .main-content {
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0 12px !important;
+    }
+
+}

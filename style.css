@@ -2875,6 +2875,26 @@ footer {
     align-items: center;
 }
 
+@media screen and (max-width: 560px) {
+
+    body {
+        display: block;
+        min-height: 100vh;
+    }
+
+    .main-layout {
+        display: block !important;
+        min-height: auto;
+        height: auto;
+        flex: none !important;
+    }
+
+    .main-content {
+        min-height: auto;
+        height: auto;
+    }
+
+}
 /* =====================================
    SIDEBAR RESPONSIVE HP
 ===================================== */
